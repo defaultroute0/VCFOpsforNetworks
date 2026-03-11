@@ -1014,7 +1014,7 @@ var responseJson = JSON.parse(responseBody);
 postman.setEnvironmentVariable("AuthenticationToken", responseJson.token);
 ```		      
 	
-![API method coming soon](https://github.com/defaultroute0/vrni/blob/master/images/autotoken.png?raw=true)
+![API method coming soon](https://github.com/defaultroute0/vrni/blob/master/images/autotoken.png)
 		
 Then you can send API calls into vRNI while the token lasts for the whole collection
 
