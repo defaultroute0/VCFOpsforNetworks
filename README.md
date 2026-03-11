@@ -1004,8 +1004,8 @@ Either use my LDAP one pictured below, or just use LOCAL example
 ```
 
 Create an auth token
-![API method coming soon](https://github.com/defaultroute0/VCFOpsforNetworks/blob/master/images/createauthtoken.png?raw=true)	      
-		      
+![API method coming soon](https://github.com/defaultroute0/VCFOpsforNetworks/blob/main/images/createauthtoken.png?raw=true)	      
+
 Come back to vrni env collection and change the token param manually to the newly returned token you got (my example as pictured above)
 or
 place this code in 'Tests' section of postman for the POST
