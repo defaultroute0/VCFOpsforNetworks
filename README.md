@@ -968,28 +968,28 @@ flows where destination port = 3389 and destination application = 'CrownJewelDB'
 
 ## Using vRNI via its API <a name="api"></a>
 See pythonexamples subfolder also
-https://github.com/defaultroute0/vrni/tree/master/pythonexamples
+https://github.com/defaultroute0/VCFOpsforNetworks/tree/master/pythonexamples
 
 Step by step instructions for setting up postman and interacting with vRNI's OpenAPI spec
 
-![API method](https://github.com/defaultroute0/vrni/blob/master/images/image.png?raw=true)
+![API method](https://github.com/defaultroute0/VCFOpsforNetworks/blob/master/images/image.png?raw=true)
 
 Use the OpenAPI spec 3.0 json and import this into postman
 https://yourvrni.yourdomain.com/doc-api/swagger-config.json
 
 or
 
-https://github.com/vrealize-network-insight/vrni-api-postman-collection
+https://github.com/VCFOpsforNetworks/vrni-api-postman-collection
 
 Import these two files as raw github links / URLs into postman
 ```
 https://raw.githubusercontent.com/vrealize-network-insight/vrni-api-postman-collection/master/vrni-6.5.0-api-postman-collection.json
 https://raw.githubusercontent.com/vrealize-network-insight/vrni-api-postman-collection/master/vrni-6.5.0-api-postman-environment.json
 ```
-![API method coming soon](https://github.com/defaultroute0/vrni/blob/master/images/postmancollection.png?raw=true)
+![API method coming soon](https://github.com/defaultroute0/VCFOpsforNetworks/blob/master/images/postmancollection.png?raw=true)
 
 Set the “host” parameter in environment as your vRNI setup IP.
-![API method coming soon](https://github.com/defaultroute0/vrni/blob/master/images/postmanenv.png?raw=true)
+![API method coming soon](https://github.com/defaultroute0/VCFOpsforNetworks/blob/master/images/postmanenv.png?raw=true)
 
 Leave parent auth method as no auth for collection
 This collection has an auth folder. In the “Create an auth token” call, change the body with the vRNI login credentials and you will get the token.
@@ -1004,7 +1004,7 @@ Either use my LDAP one pictured below, or just use LOCAL example
 ```
 
 Create an auth token
-![API method coming soon](https://github.com/defaultroute0/vrni/blob/master/images/createauthtoken.png?raw=true)	      
+![API method coming soon](https://github.com/defaultroute0/VCFOpsforNetworks/blob/master/images/createauthtoken.png?raw=true)	      
 		      
 Come back to vrni env collection and change the token param manually to the newly returned token you got (my example as pictured above)
 or
@@ -1014,18 +1014,18 @@ var responseJson = JSON.parse(responseBody);
 postman.setEnvironmentVariable("AuthenticationToken", responseJson.token);
 ```		      
 	
-![API method coming soon](https://github.com/defaultroute0/vrni/blob/master/images/autotoken.png)
+![API method coming soon](https://github.com/defaultroute0/VCFOpsforNetworks/blob/master/images/autotoken.png)
 		
 Then you can send API calls into vRNI while the token lasts for the whole collection
 
 Create PIN board example, noting ‘id’
-![API method coming soon](https://github.com/defaultroute0/vrni/blob/master/images/createpinboard.png?raw=true)
+![API method coming soon](https://github.com/defaultroute0/VCFOpsforNetworks/blob/master/images/createpinboard.png?raw=true)
 
 Then using PINboard  ID in env param to set some content
-![API method coming soon](https://github.com/defaultroute0/vrni/blob/master/images/createapin.png?raw=true)
+![API method coming soon](https://github.com/defaultroute0/VCFOpsforNetworks/blob/master/images/createapin.png?raw=true)
 
 Hope this shows you a quick example of way you can drive pinboards and their content for specific users via API method
 
 You can see OpenAPI spec documentation live in the product here:
-![API method coming soon](https://github.com/defaultroute0/vrni/blob/master/images/openapispec.png?raw=true)
+![API method coming soon](https://github.com/defaultroute0/VCFOpsforNetworks/blob/master/images/openapispec.png?raw=true)
 
